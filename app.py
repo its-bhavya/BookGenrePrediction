@@ -1,10 +1,11 @@
-st.set_page_config(page_title="Book Genre Prediction App")
 
 import streamlit as st
 import pandas as pd
 import joblib
 import re
 import nltk
+
+st.set_page_config(page_title="Book Genre Prediction App")
 
 # Load pre-trained model, vectorizer, and label encoder
 svc = joblib.load('svm_model.pkl')
