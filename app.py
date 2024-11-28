@@ -1,3 +1,5 @@
+st.set_page_config(page_title="Book Genre Prediction App")
+
 import streamlit as st
 import pandas as pd
 import joblib
@@ -46,8 +48,6 @@ def preprocess_text(text, stop_words, lemma, stemmer):
 # Streamlit app interface
 st.title("Book Genre Prediction")
 st.write("Enter a book title below to predict its genre.")
-st.set_page_config(layout="wide")
-st.set_page_config(page_title="Book Genre Prediction App")
 
 # Load dataset (optional for reference)
 books = pd.read_csv('BooksDataSet.csv')
