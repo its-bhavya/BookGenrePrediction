@@ -3,4 +3,4 @@ primaryColor = "#6200EE"  # Purple color for buttons
 backgroundColor = "#F8C8D1"  # Pastel Pink background
 secondaryBackgroundColor = "#F0F0F5"  # Light grey for sections
 textColor = "#262730"  # Dark text for readability
-font-family = 'Courier New'  # A modern sans-serif font for clarity
+font = 'monospace'  # A modern sans-serif font for clarity
