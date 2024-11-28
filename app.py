@@ -47,7 +47,7 @@ def preprocess_text(text, stop_words, lemma, stemmer):
     return text
 
 # Streamlit app interface
-st.markdown("<h1 style='text-align: center; color: #6200EE;'>📚 Book Genre Prediction</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: #000000;'>📚 Book Genre Prediction</h1>", unsafe_allow_html=True)
 st.write("Enter a book title below to predict its genre.")
 
 # Load dataset (optional for reference)
