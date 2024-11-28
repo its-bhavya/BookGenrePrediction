@@ -47,7 +47,7 @@ def preprocess_text(text, stop_words, lemma, stemmer):
     return text
 
 # Streamlit app interface
-st.title("Book Genre Prediction")
+st.markdown("<h1 style='text-align: center; color: #6200EE;'>📚 Book Genre Prediction</h1>", unsafe_allow_html=True)
 st.write("Enter a book title below to predict its genre.")
 
 # Load dataset (optional for reference)
@@ -72,6 +72,12 @@ if st.button("Predict Genre"):
         book_vec = tfidf_vectorizer.transform([processed_summary])
         predicted_genre = svc.predict(book_vec)
         predicted_genre_label = LE.inverse_transform(predicted_genre)[0]
-        st.success(f"Predicted genre: **{predicted_genre_label}**")
+        with st.spinner('Predicting genre...'):
+            st.success(f"Predicted genre: **{predicted_genre_label}**")
     else:
         st.error("Please enter a valid book title!")
+with st.expander("📖 About the App"):
+    st.write("""
+        This app predicts the genre of a book based on its title or summary. It uses a trained machine learning model 
+        to classify the genre and provide an accurate prediction.
+    """)
