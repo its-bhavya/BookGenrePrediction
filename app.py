@@ -6,7 +6,7 @@ import re
 import nltk
 import random
 
-st.set_page_config(page_title="Book Genre Prediction App")
+st.set_page_config(page_title="BookWise")
 
 # Load pre-trained model, vectorizer, and label encoder
 svc = joblib.load('svm_model.pkl')
@@ -48,7 +48,7 @@ def preprocess_text(text, stop_words, lemma, stemmer):
     return text
 
 # Streamlit app interface
-st.markdown("<h1 style='text-align: center; color: #000000;'>📚 Book Genre Prediction</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: #000000;'>📚 BookWise</h1>", unsafe_allow_html=True)
 st.write("Enter a book title below to predict its genre.")
 
 # Load dataset (optional for reference)
