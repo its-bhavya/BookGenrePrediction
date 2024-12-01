@@ -1,9 +1,12 @@
+
 import streamlit as st
 import pandas as pd
 import joblib
 import re
 import nltk
 import random
+
+st.set_page_config(page_title="Book Genre Prediction App")
 
 st.set_page_config(page_title="Book Genre Prediction App")
 
@@ -102,6 +105,7 @@ if st.button("Predict Genre"):
     else:
         st.error("Please enter a valid book title!")
 
+
 if st.button("Recommend Similar Books"):
     if book_name:
         similar_books = recommend_books_by_genre(book_name, books)
@@ -118,5 +122,11 @@ with st.expander("📖 About the App"):
     st.write("""
         This app predicts the genre of a book based on its title or summary. It uses a trained machine learning model 
         to classify the genre and provide an accurate prediction. You can also get recommendations of similar books
-        based on the same genre.
+        based on the same genre.""")
+
+with st.expander("📖 About the App"):
+    st.write("""
+        This app predicts the genre of a book based on its title or summary. It uses a trained machine learning model 
+        to classify the genre and provide an accurate prediction.
+>>>>>>> 07bd437b1fd9629851d56468de8fea03dfc53452
     """)
