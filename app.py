@@ -8,8 +8,6 @@ import random
 
 st.set_page_config(page_title="Book Genre Prediction App")
 
-st.set_page_config(page_title="Book Genre Prediction App")
-
 # Load pre-trained model, vectorizer, and label encoder
 svc = joblib.load('svm_model.pkl')
 tfidf_vectorizer = joblib.load('tfidf_vectorizer.pkl')
