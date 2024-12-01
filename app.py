@@ -122,9 +122,3 @@ with st.expander("📖 About the App"):
         to classify the genre and provide an accurate prediction. You can also get recommendations of similar books
         based on the same genre.""")
 
-with st.expander("📖 About the App"):
-    st.write("""
-        This app predicts the genre of a book based on its title or summary. It uses a trained machine learning model 
-        to classify the genre and provide an accurate prediction.
->>>>>>> 07bd437b1fd9629851d56468de8fea03dfc53452
-    """)
